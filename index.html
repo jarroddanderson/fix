@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#f8f7f4;--fg:#111110;--muted:#888884;--accent:#c8a96e;--border:#e2e0db;--white:#fff;--serif:'Cormorant Garamond',serif;--sans:'DM Sans',sans-serif}
+:root{--bg:#f8f7f4;--fg:#111110;--muted:#888884;--ink-soft:#4f4f49;--accent:#FF4F00;--accent-deep:#C43C00;--accent-soft:#C5E6A6;--border:#e2e0db;--white:#fff;--serif:'Cormorant Garamond',serif;--sans:'DM Sans',sans-serif}
 html{scroll-behavior:smooth}
 body{font-family:var(--sans);background:var(--bg);color:var(--fg);font-size:15px;line-height:1.6;overflow-x:hidden}
 
@@ -50,7 +50,7 @@ nav.scrolled .nav-hamburger span{background:rgba(255,255,255,.75)}
 .hero-right{text-align:right}
 .hero-right p{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:16px}
 .scroll-cue{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.38);display:flex;align-items:center;gap:10px;justify-content:flex-end}
-.hero-cta{display:inline-block;margin-bottom:20px;padding:12px 28px;border:1px solid rgba(200,169,110,.7);color:var(--accent);font-size:11px;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;border-radius:100px;transition:all .25s;backdrop-filter:blur(4px);background:rgba(200,169,110,.08)}
+.hero-cta{display:inline-block;margin-bottom:20px;padding:12px 28px;border:1px solid rgba(255,79,0,.7);color:var(--accent);font-size:11px;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;border-radius:100px;transition:all .25s;backdrop-filter:blur(4px);background:rgba(255,79,0,.08)}
 .hero-cta:hover{background:var(--accent);color:#111110;border-color:var(--accent)}
 .scroll-cue::before{content:'';display:block;width:32px;height:1px;background:rgba(255,255,255,.3)}
 
@@ -108,7 +108,7 @@ nav.scrolled .nav-hamburger span{background:rgba(255,255,255,.75)}
 .pb-desc{font-size:14px;color:rgba(255,255,255,.48);line-height:1.8;margin-bottom:28px}
 .pb-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
 .pb-tag{padding:5px 13px;border:1px solid rgba(255,255,255,.15);border-radius:100px;font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.02em}
-.pb-cta{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;background:#7B2FBE;color:#fff;font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:opacity .2s}
+.pb-cta{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;background:#673091;color:#fff;font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:opacity .2s}
 .pb-cta:hover{opacity:.82}
 .pb-vis{border-radius:3px;overflow:hidden;aspect-ratio:4/3}
 .pb-vis img{width:100%;height:100%;object-fit:cover;display:block}
@@ -137,20 +137,20 @@ nav.scrolled .nav-hamburger span{background:rgba(255,255,255,.75)}
 
 .calc{background:var(--fg);border-radius:4px;padding:40px}
 .calc-h{font-family:var(--serif);font-size:22px;font-weight:300;color:var(--white);margin-bottom:28px}
-.calc-intro{font-size:13px;color:rgba(255,255,255,.4);margin-top:-16px;margin-bottom:24px;line-height:1.6;letter-spacing:.01em}
+.calc-intro{font-size:13px;color:rgba(255,255,255,.6);margin-top:-16px;margin-bottom:24px;line-height:1.6;letter-spacing:.01em}
 .crow{margin-bottom:0;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.08)}.crow:last-child{border-bottom:none}
-.clbl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:10px}
+.clbl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:10px}
 
 
 .scards{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
 .scard{padding:14px;border:1px solid rgba(255,255,255,.1);background:none;border-radius:3px;font-family:var(--sans);cursor:pointer;transition:all .2s;text-align:left}
 .scard:hover{border-color:rgba(255,255,255,.3)}
-.scard.sel{border-color:var(--accent);background:rgba(200,169,110,.08)}
+.scard.sel{border-color:var(--accent);background:rgba(255,79,0,.08)}
 .scard-n{font-size:12px;font-weight:500;color:rgba(255,255,255,.75);letter-spacing:.02em;margin-bottom:5px}
 .scard.sel .scard-n{color:var(--accent)}
-.scard-d{font-size:11px;color:rgba(255,255,255,.3);line-height:1.5}
+.scard-d{font-size:11.5px;color:rgba(255,255,255,.5);line-height:1.5}
 .step-badge{font-size:9px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;padding:2px 7px;border-radius:2px;vertical-align:middle;margin-left:6px}
-.step-badge.req{color:rgba(200,169,110,.75);background:rgba(200,169,110,.12)}
+.step-badge.req{color:rgba(255,79,0,.75);background:rgba(255,79,0,.12)}
 .step-badge.opt{color:rgba(255,255,255,.3);background:rgba(255,255,255,.08)}
 
 .copts{display:flex;flex-wrap:wrap;gap:8px}
@@ -165,7 +165,7 @@ nav.scrolled .nav-hamburger span{background:rgba(255,255,255,.75)}
 
 .hrs-price-tag{margin-left:auto;font-size:22px;font-weight:600;color:var(--accent);font-family:var(--sans)}
 #hrs-slider{width:100%;-webkit-appearance:none;appearance:none;height:3px;background:rgba(255,255,255,.2);border-radius:2px;outline:none;cursor:pointer;margin-bottom:8px}
-#hrs-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:22px;height:22px;border-radius:50%;background:var(--accent);cursor:pointer;box-shadow:0 1px 6px rgba(200,169,110,.5)}
+#hrs-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:22px;height:22px;border-radius:50%;background:var(--accent);cursor:pointer;box-shadow:0 1px 6px rgba(255,79,0,.5)}
 #hrs-slider::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--accent);cursor:pointer;border:none}
 .hrs-range-labels{display:flex;justify-content:space-between;font-size:10px;color:rgba(255,255,255,.3);letter-spacing:.06em;margin-bottom:20px}
 .hrs-presets{display:flex;gap:8px;flex-wrap:wrap}
@@ -180,7 +180,7 @@ nav.scrolled .nav-hamburger span{background:rgba(255,255,255,.75)}
 .ltogs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .ltog{padding:12px 16px;border:1px solid rgba(255,255,255,.1);background:none;border-radius:3px;font-family:var(--sans);cursor:pointer;transition:all .2s;text-align:left}
 .ltog:hover{border-color:rgba(255,255,255,.3)}
-.ltog.sel{border-color:var(--accent);background:rgba(200,169,110,.08)}
+.ltog.sel{border-color:var(--accent);background:rgba(255,79,0,.08)}
 .ltog-n{font-size:12px;font-weight:500;color:rgba(255,255,255,.75);margin-bottom:3px}
 .ltog.sel .ltog-n{color:var(--accent)}
 .ltog-d{font-size:11px;color:rgba(255,255,255,.3);line-height:1.4}
@@ -188,7 +188,7 @@ nav.scrolled .nav-hamburger span{background:rgba(255,255,255,.75)}
 .agrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .ca{padding:11px 14px;border:1px solid rgba(255,255,255,.1);background:none;border-radius:3px;font-family:var(--sans);font-size:12px;color:rgba(255,255,255,.45);cursor:pointer;transition:all .2s;text-align:left;display:flex;flex-direction:column;gap:4px}
 .ca:hover{border-color:rgba(255,255,255,.28);color:rgba(255,255,255,.8)}
-.ca.sel{border-color:var(--accent);color:var(--white);background:rgba(200,169,110,.08)}
+.ca.sel{border-color:var(--accent);color:var(--white);background:rgba(255,79,0,.08)}
 .ca-row{display:flex;justify-content:space-between;align-items:center;width:100%}
 .ap{font-size:11px;color:var(--accent);white-space:nowrap;margin-left:6px}
 .ca-note{font-size:10px;color:rgba(255,255,255,.25);line-height:1.4}
@@ -208,10 +208,10 @@ nav.scrolled .nav-hamburger span{background:rgba(255,255,255,.75)}
 .video-opts{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
 .vopt{padding:8px 12px;border:1px solid rgba(255,255,255,.08);border-radius:3px;font-family:var(--sans);font-size:11px;color:rgba(255,255,255,.35);cursor:pointer;transition:all .2s;text-align:left;display:flex;justify-content:space-between;align-items:center;background:none}
 .vopt:hover{border-color:rgba(255,255,255,.22);color:rgba(255,255,255,.7)}
-.vopt.sel{border-color:var(--accent);color:rgba(255,255,255,.8);background:rgba(200,169,110,.06)}
+.vopt.sel{border-color:var(--accent);color:rgba(255,255,255,.8);background:rgba(255,79,0,.06)}
 .vopt-price{font-size:10px;color:var(--accent)}
 
-.lic-note{margin-top:10px;padding:12px 16px;border:1px solid rgba(200,169,110,.22);border-radius:3px;background:rgba(200,169,110,.05)}
+.lic-note{margin-top:10px;padding:12px 16px;border:1px solid rgba(255,79,0,.22);border-radius:3px;background:rgba(255,79,0,.05)}
 .lic-note p{font-size:11px;color:rgba(255,255,255,.4);line-height:1.65}
 .lic-note a{color:var(--accent);text-decoration:none}
 .lic-note a:hover{text-decoration:underline}
@@ -235,7 +235,7 @@ nav.scrolled .nav-hamburger span{background:rgba(255,255,255,.75)}
 .btn-inq{display:block;margin-top:4px;width:100%;padding:14px 28px;background:var(--accent);color:var(--fg);font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:none;border-radius:2px;cursor:pointer;text-align:center;transition:opacity .2s}
 .btn-inq:hover{opacity:.82}
 .btn-inq:disabled{opacity:.4;cursor:not-allowed}
-.success-msg{display:none;margin-top:14px;padding:14px;background:rgba(200,169,110,.1);border:1px solid rgba(200,169,110,.3);border-radius:3px;font-size:12px;color:rgba(200,169,110,.9);text-align:center;line-height:1.6}
+.success-msg{display:none;margin-top:14px;padding:14px;background:rgba(255,79,0,.1);border:1px solid rgba(255,79,0,.3);border-radius:3px;font-size:12px;color:rgba(255,79,0,.9);text-align:center;line-height:1.6}
 
 footer{padding:36px 60px;background:#0a0a09;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 .flogo{font-family:var(--serif);font-size:18px;font-weight:300;color:rgba(255,255,255,.35)}
@@ -324,7 +324,7 @@ footer{background:var(--fg);color:rgba(255,255,255,.4);text-align:center;padding
 .date-opts{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap}
 .dopt{padding:11px 14px;border:1px solid rgba(255,255,255,.1);background:none;border-radius:3px;font-family:var(--sans);font-size:12px;color:rgba(255,255,255,.45);cursor:pointer;transition:all .2s;text-align:left}
 .dopt:hover{border-color:rgba(255,255,255,.28);color:rgba(255,255,255,.8)}
-.dopt.sel{border-color:var(--accent);color:var(--white);background:rgba(200,169,110,.08)}
+.dopt.sel{border-color:var(--accent);color:var(--white);background:rgba(255,79,0,.08)}
 .date-range-row{display:flex;align-items:center;gap:10px}
 .date-range-sep{color:rgba(255,255,255,.4);font-size:13px;white-space:nowrap}
 .date-range-row .finput{flex:1}
@@ -339,6 +339,85 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
   .hero-right{display:none}
   .hero-welcome{display:none}
 }
+
+/* --- inquiry form --- */
+.rate-line{background:rgba(255,79,0,.10);border:1px solid rgba(255,79,0,.38);border-radius:10px;padding:16px 18px;margin-bottom:30px}
+.rate-line p{font-size:13px;line-height:1.7;color:rgba(255,255,255,.78);margin:0}
+.rate-line strong{color:#FF7A3C;font-weight:600}
+.rate-line a{display:inline-block;margin-top:12px;font-size:14px;color:#fff;font-weight:500;text-decoration:none;border-bottom:1.5px solid var(--accent);padding-bottom:2px;transition:color .2s}
+.rate-line a:hover{color:#FF7A3C}
+.rate-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:6px 0;font-size:13px}
+.rate-row span{color:var(--muted)}
+.rate-row strong{font-weight:500;color:var(--accent-deep);white-space:nowrap}
+.rate-fine{font-size:11.5px;line-height:1.5;color:var(--muted);margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,79,0,.15)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.finput{width:100%;padding:13px 15px;border:1px solid var(--border);border-radius:8px;background:var(--white);font-family:var(--sans);font-size:14px;color:var(--fg);transition:border-color .2s}
+.finput:focus{outline:none;border-color:var(--accent)}
+.finput::placeholder{color:#aaa}
+.ftext{resize:vertical;min-height:96px;line-height:1.5}
+.bgrid{display:flex;flex-wrap:wrap;gap:8px}
+.bopt{padding:10px 16px;border:1px solid var(--border);border-radius:100px;background:var(--white);font-family:var(--sans);font-size:12.5px;color:var(--fg);cursor:pointer;transition:all .2s}
+.bopt:hover{border-color:var(--accent)}
+.bopt.sel{background:var(--accent);border-color:var(--accent);color:#fff}
+.scard.sel{border-color:var(--accent);background:rgba(255,79,0,.06)}
+.success-msg{display:none;margin-top:14px;font-size:13px;color:var(--accent-deep)}
+.success-msg.show{display:block}
+.step-badge.opt{opacity:.65}
+/* --- routing block --- */
+.route{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:0 60px 100px;background:var(--white)}
+.route-card{border:1px solid var(--border);border-radius:12px;padding:34px 32px;display:flex;flex-direction:column;transition:border-color .25s}
+.route-card:hover{border-color:var(--accent)}
+.route-eye{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.route-ttl{font-family:var(--serif);font-size:30px;font-weight:300;line-height:1.1;margin-bottom:12px}
+.route-desc{font-size:14px;line-height:1.65;color:#55554f;margin-bottom:20px;flex:1}
+.route-price{font-size:12px;letter-spacing:.06em;color:var(--accent-deep);margin-bottom:18px}
+.route-cta{align-self:flex-start;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--fg);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:4px;transition:color .2s}
+.route-cta:hover{color:var(--accent-deep)}
+@media(max-width:900px){.route{grid-template-columns:1fr;padding:0 24px 64px}.fgrid{grid-template-columns:1fr}}
+
+
+#work-with-me{padding:100px 60px;background:var(--bg)}
+.split-note{margin-top:44px;padding:36px 40px;background:var(--white);border:1px solid var(--border);border-radius:12px}
+.split-note h4{font-family:var(--serif);font-size:26px;font-weight:300;margin-bottom:8px}
+.split-note>p{font-size:14.5px;color:var(--ink-soft);margin-bottom:26px}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.split-col{border-left:2px solid var(--accent);padding-left:20px}
+.split-lbl{display:block;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-deep);margin-bottom:10px}
+.split-col p{font-size:14px;line-height:1.7;color:#55554f}
+.split-col strong{color:var(--fg);font-weight:500}
+.split-fine{margin-top:26px;padding-top:20px;border-top:1px solid var(--border);font-size:13.5px;line-height:1.7;color:var(--ink-soft);font-style:italic}
+.stiers{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
+.stier{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:26px 24px;transition:border-color .25s,transform .25s}
+.stier:hover{border-color:var(--accent);transform:translateY(-3px)}
+.stier.feat{border-color:var(--accent);background:rgba(255,79,0,.035)}
+.stier-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:10px}
+.stier-top h4{font-family:var(--serif);font-size:20px;font-weight:400;line-height:1.15}
+.stier-p{font-size:15px;font-weight:500;color:var(--accent-deep);white-space:nowrap}
+.stier-spec{font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.stier-d{font-size:13.5px;line-height:1.65;color:#55554f}
+.stier-fine{margin-top:20px;font-size:12.5px;line-height:1.75;color:var(--ink-soft)}
+.route{padding:0!important;background:transparent!important}
+@media(max-width:1100px){.stiers{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){#work-with-me{padding:64px 24px}.stiers{grid-template-columns:1fr}.split-grid{grid-template-columns:1fr;gap:24px}.split-note{padding:28px 24px}}
+
+
+#newsletter{background:var(--fg);color:var(--white);padding:64px 60px}
+.nl-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;max-width:1200px;margin:0 auto}
+.nl-eye{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#FF7A3C;margin-bottom:12px}
+.nl-ttl{font-family:var(--serif);font-size:clamp(26px,3vw,36px);font-weight:300;line-height:1.15;margin-bottom:12px;color:var(--white)}
+.nl-desc{font-size:14.5px;line-height:1.7;color:rgba(255,255,255,.72);max-width:52ch}
+.nl-desc em{color:rgba(255,255,255,.92);font-style:italic}
+.nl-form{display:flex;flex-wrap:wrap;gap:10px}
+.nl-input{flex:1;min-width:200px;padding:15px 18px;border:1px solid rgba(255,255,255,.22);border-radius:8px;background:rgba(255,255,255,.06);color:var(--white);font-family:var(--sans);font-size:14.5px;transition:border-color .2s,background .2s}
+.nl-input::placeholder{color:rgba(255,255,255,.42)}
+.nl-input:focus{outline:none;border-color:var(--accent);background:rgba(255,255,255,.1)}
+.nl-btn{padding:15px 30px;border:none;border-radius:8px;background:var(--accent);color:#fff;font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:background .2s,transform .15s}
+.nl-btn:hover{background:#FF7A3C;transform:translateY(-1px)}
+.nl-btn:disabled{opacity:.55;cursor:default;transform:none}
+.nl-fine{flex-basis:100%;font-size:12px;color:rgba(255,255,255,.45);margin-top:2px}
+.nl-fine.ok{color:#FF7A3C}
+@media(max-width:900px){#newsletter{padding:48px 24px}.nl-inner{grid-template-columns:1fr;gap:28px}}
+
 </style>
 </head>
 <body>
@@ -347,9 +426,10 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
   <a class="nav-logo" href="#home">by<em>jarrod</em></a>
   <ul class="nav-links">
     <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#work-with-me">Sessions</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="#estimator">Book</a></li>
+    <li><a href="#estimator">Contact</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -360,9 +440,10 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
   <button class="nav-close-btn" onclick="closeMenu()" aria-label="Close menu">&times;</button>
   <ul>
     <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+    <li><a href="#work-with-me" onclick="closeMenu()">Sessions</a></li>
     <li><a href="#about" onclick="closeMenu()">About</a></li>
     <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
-    <li><a href="#estimator" onclick="closeMenu()">Book</a></li>
+    <li><a href="#estimator" onclick="closeMenu()">Contact</a></li>
   </ul>
   <div class="nav-dropdown-cities">Atlanta &nbsp;·&nbsp; Los Angeles &nbsp;·&nbsp; New York</div>
   <div class="nav-dropdown-social">
@@ -373,13 +454,13 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
 
 <section id="home">
   <div class="hero-bg">
-    <img src="images/photo01.jpg" alt="">
+    <img src="images/img001_c0c551a436.jpg" alt="">
   </div>
   <div class="hero-text">
     <h1 class="hero-welcome">by<em>jarrod</em></h1>
     <div class="hero-right">
       <p>Photographer &amp; Director</p>
-      <a href="#estimator" class="hero-cta">Book a Session</a>
+      <a href="#estimator" class="hero-cta">Start a Project</a>
       <span class="scroll-cue">Scroll to explore</span>
     </div>
   </div>
@@ -416,6 +497,8 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
   </div>
 </div>
 
+
+
 <section id="portfolio">
   <div class="sec-hdr">
     <div><p class="sec-eye">Selected Work</p><h2 class="sec-ttl">Portfolio</h2></div>
@@ -428,79 +511,79 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
     </div>
   </div>
   <div class="port-mosaic">
-    <div class="pi" data-cat="editorial" onclick="openLB(4)"><img loading="lazy" src="images/photo02.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(0)"><img loading="lazy" src="images/photo03.jpg" alt=""></div>
-<div class="pi" data-cat="portrait" onclick="openLB(8)"><img loading="lazy" src="images/photo04.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(9)"><img loading="lazy" src="images/photo05.jpg"></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo06.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(3)"><img loading="lazy" src="images/photo07.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo08.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(16)"><img loading="lazy" src="images/photo09.jpg"></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo10.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(14)"><img loading="lazy" src="images/photo11.jpg"></div>
-<div class="pi" data-cat="campaign" onclick="openLB(22)"><img loading="lazy" src="images/photo12.jpg"></div>
-<div class="pi" data-cat="editorial" onclick="openLB(30)"><img loading="lazy" src="images/photo13.jpg"></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo14.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(27)"><img loading="lazy" src="images/photo15.jpg"></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo16.jpg"></div>
-<div class="pi" data-cat="editorial" onclick="openLB(0)"><img loading="lazy" src="images/photo17.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(23)"><img loading="lazy" src="images/photo18.jpg"></div>
-<div class="pi" data-cat="editorial" onclick="openLB(0)"><img loading="lazy" src="images/photo19.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo20.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(29)"><img loading="lazy" src="images/photo21.jpg"></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo22.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(28)"><img loading="lazy" src="images/photo23.jpg"></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo24.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(13)"><img loading="lazy" src="images/photo25.jpg"></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo26.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo27.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo28.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(18)"><img loading="lazy" src="images/photo29.jpg"></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo30.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo31.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(24)"><img loading="lazy" src="images/photo32.jpg"></div>
-<div class="pi" data-cat="editorial" onclick="openLB(11)"><img loading="lazy" src="images/photo33.jpg"></div>
-<div class="pi" data-cat="campaign" onclick="openLB(19)"><img loading="lazy" src="images/photo34.jpg"></div>
-<div class="pi" data-cat="portrait" onclick="openLB(2)"><img loading="lazy" src="images/photo35.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo36.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(5)"><img loading="lazy" src="images/photo37.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo38.jpg" alt=""></div>
-<div class="pi" data-cat="portrait" onclick="openLB(0)"><img loading="lazy" src="images/photo39.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo40.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(10)"><img loading="lazy" src="images/photo41.jpg"></div>
-<div class="pi" data-cat="campaign" onclick="openLB(20)"><img loading="lazy" src="images/photo42.jpg"></div>
-<div class="pi" data-cat="portrait" onclick="openLB(0)"><img loading="lazy" src="images/photo43.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo44.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(17)" loading="lazy"><img loading="lazy" src="images/photo45.jpg"></div>
-<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/photo46.jpg" alt=""></div>
-<div class="pi" data-cat="portrait" onclick="openLB(1)"><img loading="lazy" src="images/photo47.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(25)"><img loading="lazy" src="images/photo48.jpg" alt=""></div>
-<div class="pi" data-cat="editorial" onclick="openLB(12)"><img loading="lazy" src="images/photo49.jpg"></div>
-<div class="pi" data-cat="portrait" onclick="openLB(0)"><img loading="lazy" src="images/photo50.jpg" alt=""></div>
-<div class="pi" data-cat="campaign" onclick="openLB(21)"><img loading="lazy" src="images/photo51.jpg"></div>
-<div class="pi" data-cat="editorial" onclick="openLB(26)"><img loading="lazy" src="images/photo52.jpg"></div>
-<div class="pi" data-cat="editorial" onclick="openLB(6)"><img loading="lazy" src="images/photo53.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo54.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo55.jpg" alt=""></div>
+    <div class="pi" data-cat="editorial" onclick="openLB(4)"><img loading="lazy" src="images/img002_d603077ea4.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(0)"><img loading="lazy" src="images/img003_11e4de0dbe.jpg" alt=""></div>
+<div class="pi" data-cat="portrait" onclick="openLB(8)"><img loading="lazy" src="images/img004_cd64e571f5.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(9)"><img loading="lazy" src="images/img005_7e0713fd2f.jpg"></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img006_d775a38bc4.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(3)"><img loading="lazy" src="images/img007_e8c666364c.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img008_72c05eb91f.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(16)"><img loading="lazy" src="images/img009_978b9f9253.jpg"></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img010_04afeb8fbd.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(14)"><img loading="lazy" src="images/img011_1e6d0ae215.jpg"></div>
+<div class="pi" data-cat="campaign" onclick="openLB(22)"><img loading="lazy" src="images/img012_389e4baffb.jpg"></div>
+<div class="pi" data-cat="editorial" onclick="openLB(30)"><img loading="lazy" src="images/img013_c4c8a0c454.jpg"></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img014_21d4170287.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(27)"><img loading="lazy" src="images/img015_4370cda538.jpg"></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img016_520846b210.jpg"></div>
+<div class="pi" data-cat="editorial" onclick="openLB(0)"><img loading="lazy" src="images/img017_2328258951.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(23)"><img loading="lazy" src="images/img018_92c0478c97.jpg"></div>
+<div class="pi" data-cat="editorial" onclick="openLB(0)"><img loading="lazy" src="images/img019_27f13c71b3.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img020_b2953184f6.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(29)"><img loading="lazy" src="images/img021_61d624f340.jpg"></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img022_1dd89a451a.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(28)"><img loading="lazy" src="images/img023_59e96f7561.jpg"></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img024_95d004dbda.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(13)"><img loading="lazy" src="images/img025_67da87aff6.jpg"></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img026_41b582bd17.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img027_693ca8d769.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img028_bb81bfc08b.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(18)"><img loading="lazy" src="images/img029_2c7285bbd6.jpg"></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img030_8c0ecb94a9.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img031_6d1ba94412.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(24)"><img loading="lazy" src="images/img032_75cc77598f.jpg"></div>
+<div class="pi" data-cat="editorial" onclick="openLB(11)"><img loading="lazy" src="images/img033_7c1ad98cbb.jpg"></div>
+<div class="pi" data-cat="campaign" onclick="openLB(19)"><img loading="lazy" src="images/img034_f2c951f9a4.jpg"></div>
+<div class="pi" data-cat="portrait" onclick="openLB(2)"><img loading="lazy" src="images/img035_22efeb384c.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img036_b206ba7033.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(5)"><img loading="lazy" src="images/img037_0e7fa5264d.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img038_e8b9a1aa25.jpg" alt=""></div>
+<div class="pi" data-cat="portrait" onclick="openLB(0)"><img loading="lazy" src="images/img039_c50bc0eb61.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img001_c0c551a436.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(10)"><img loading="lazy" src="images/img040_3b2852e817.jpg"></div>
+<div class="pi" data-cat="campaign" onclick="openLB(20)"><img loading="lazy" src="images/img041_611422bf9a.jpg"></div>
+<div class="pi" data-cat="portrait" onclick="openLB(0)"><img loading="lazy" src="images/img042_7095adbf11.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img043_4773cf6a41.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(17)" loading="lazy"><img loading="lazy" src="images/img044_09e3be762f.jpg"></div>
+<div class="pi" data-cat="campaign" onclick="openLB(0)"><img loading="lazy" src="images/img045_33d77ed0f7.jpg" alt=""></div>
+<div class="pi" data-cat="portrait" onclick="openLB(1)"><img loading="lazy" src="images/img046_a02c9f5de3.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(25)"><img loading="lazy" src="images/img047_b25ed0ac74.jpg" alt=""></div>
+<div class="pi" data-cat="editorial" onclick="openLB(12)"><img loading="lazy" src="images/img048_3b8a23d706.jpg"></div>
+<div class="pi" data-cat="portrait" onclick="openLB(0)"><img loading="lazy" src="images/img049_98591aad85.jpg" alt=""></div>
+<div class="pi" data-cat="campaign" onclick="openLB(21)"><img loading="lazy" src="images/img050_b0d4e50746.jpg"></div>
+<div class="pi" data-cat="editorial" onclick="openLB(26)"><img loading="lazy" src="images/img051_040b4078b9.jpg"></div>
+<div class="pi" data-cat="editorial" onclick="openLB(6)"><img loading="lazy" src="images/img052_e6edd2029a.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img053_c29f6be33e.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img054_2f80175ebe.jpg" alt=""></div>
 
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo56.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo57.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo58.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo59.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo60.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo61.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo62.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo63.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo64.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo65.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(7)"><img loading="lazy" src="images/photo66.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo67.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo68.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo69.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo70.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo71.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo72.jpg" alt=""></div>
-<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/photo73.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img055_f973e18a35.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img056_a3a2ad25d5.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img057_823cf04f3e.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img058_71909b6d65.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img059_cae621cefa.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img060_a68070d374.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img061_ab32125550.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img062_99e2ce41ea.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img063_1502720b09.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img064_a057ef43d0.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(7)"><img loading="lazy" src="images/img065_d8fe5d6435.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img066_01621ac106.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img067_5db83d61f9.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img068_ea64128644.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img069_21965656bb.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img070_30b9b5f9eb.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img071_5f2107ca04.jpg" alt=""></div>
+<div class="pi" data-cat="event" onclick="openLB(0)"><img loading="lazy" src="images/img072_e6c01c9b68.jpg" alt=""></div>
   </div>
   <script>
 (function(){
@@ -515,6 +598,69 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
   </div>
 </section>
 
+<section id="work-with-me">
+  <div class="sec-hdr">
+    <div><p class="sec-eye">Ways to work together</p><h2 class="sec-ttl">Sessions &amp; <em style="font-family:'Cormorant Garamond',serif;font-style:italic">commercial</em></h2></div>
+  </div>
+
+  <div class="route">
+    <div class="route-card">
+      <p class="route-eye">For individuals &amp; teams</p>
+      <h3 class="route-ttl">Sessions</h3>
+      <p class="route-desc">Portraits, headshots and editorial sessions. Studio or on location — Atlanta, LA, New York, or wherever you are. Fixed pricing, clear deliverables, gallery in 7–10 days.</p>
+      <a href="#estimator" class="route-cta">Book a session &rarr;</a>
+    </div>
+    <div class="route-card">
+      <p class="route-eye">For brands &amp; agencies</p>
+      <h3 class="route-ttl">Commercial</h3>
+      <p class="route-desc">Campaigns, lookbooks, product and content. Book me as photographer and director — or bring in the agency for full production: casting, styling, crew and post handled end to end. Ship product to the studio and we shoot it without you leaving your desk.</p>
+      <p class="route-price">Day rates from $1,800 · Full production from $4,500</p>
+      <a href="#estimator" class="route-cta">Start a project &rarr;</a>
+    </div>
+  </div>
+
+  <div class="split-note">
+    <h4>Portrait or editorial &mdash; what&rsquo;s the difference?</h4>
+    <p>It isn&rsquo;t who had the idea. It&rsquo;s whether the picture has to be <em>built</em>.</p>
+    <div class="split-grid">
+      <div class="split-col">
+        <span class="split-lbl">A portrait</span>
+        <p><strong>A standard setup.</strong> One lighting design, two looks from your own wardrobe, and my direction on the day. Bring references for mood or light and I&rsquo;ll shoot toward them &mdash; that&rsquo;s included, not extra.</p>
+      </div>
+      <div class="split-col">
+        <span class="split-lbl">An editorial</span>
+        <p><strong>A built setup.</strong> Sourced props, styling, a scouted location, more than one environment. That work happens days before the shoot &mdash; which is what you&rsquo;re paying for. Scouting and concepting are in the fee; any venue or prop spend is passed through at cost, agreed up front.</p>
+      </div>
+    </div>
+    <p class="split-fine">Already have a moodboard? Bring it &mdash; either tier. The price follows what the shoot needs built, not who thought of it. And whichever way we go, I&rsquo;ll tell you honestly what will work and what won&rsquo;t before we shoot it.</p>
+  </div>
+
+  <div class="stiers">
+    <div class="stier">
+      <div class="stier-top"><h4>Portrait &amp; Headshot</h4><span class="stier-p">$650</span></div>
+      <p class="stier-spec">90 min · 2 looks · 15 edited images</p>
+      <p class="stier-d">One person, standard setup. Mood references welcome.</p>
+    </div>
+    <div class="stier">
+      <div class="stier-top"><h4>Executive &amp; Brand</h4><span class="stier-p">$950</span></div>
+      <p class="stier-spec">2 hrs · 3 looks · 25 edited images</p>
+      <p class="stier-d">More range and more polish. Includes crops sized for press and profiles.</p>
+    </div>
+    <div class="stier feat">
+      <div class="stier-top"><h4>Editorial</h4><span class="stier-p">$1,200</span></div>
+      <p class="stier-spec">3 hrs · 3–4 looks · 30 edited images</p>
+      <p class="stier-d">A built shoot — styling, props, location. Bring a concept or I&rsquo;ll build one.</p>
+    </div>
+    <div class="stier">
+      <div class="stier-top"><h4>Team &amp; Group</h4><span class="stier-p">$2,400</span></div>
+      <p class="stier-spec">Half day · up to 10 people · 5 images each</p>
+      <p class="stier-d">Consistent lighting and treatment across a whole team.</p>
+    </div>
+  </div>
+  <p class="stier-fine">All sessions include one location &mdash; public, your space or mine &mdash; plus a personal-use licence and 7&ndash;10 day delivery. Editorial includes concepting and scouting time; venue fees, permits, props and rented studio (+$125/hr) are billed at cost and agreed before we book. Extra looks $150 &middot; extra images $45 each or 8 for $300 &middot; hair &amp; makeup $350&ndash;450 &middot; commercial usage licensed separately.</p>
+</section>
+
+
 <div class="lightbox" id="lightbox" onclick="closeLBOut(event)">
   <button class="lb-close" onclick="closeLB()">&#215;</button>
   <button class="lb-nav lb-prev" onclick="navLB(-1,event)">&#8592;</button>
@@ -524,7 +670,7 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
 </div>
 <section id="about">
   <div class="about-vis">
-    <div class="about-photo"><img src="images/photo74.jpg" alt="Jarrod"></div>
+    <div class="about-photo"><img src="images/img073_8aead893bb.jpg" alt="Jarrod"></div>
     <div class="about-frame"></div>
     <div class="about-stats">
       <div><div class="sn">8+</div><div class="sl">Years</div></div>
@@ -559,7 +705,7 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
     <a href="https://purplespideragency.com" target="_blank" class="pb-cta">Visit Purple Spider Agency &rarr;</a>
   </div>
   <div style="display:flex;align-items:center;justify-content:flex-end;overflow:hidden;max-width:100%;" class="pb-logo-wrap">
-    <a href="https://purplespideragency.com" target="_blank" style="display:inline-block;line-height:0;cursor:pointer;"><img src="images/photo75.png" alt="Purple Spider Agency" style="height:auto;width:100%;max-width:360px;max-height:400px;display:block;object-fit:contain;"></a>
+    <a href="https://purplespideragency.com" target="_blank" style="display:inline-block;line-height:0;cursor:pointer;"><img src="images/img074_7616299124.png" alt="Purple Spider Agency" style="height:auto;width:100%;max-width:360px;max-height:400px;display:block;object-fit:contain;"></a>
   </div>
 </div>
 
@@ -570,9 +716,13 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
   <div class="faq-grid">
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How do I receive my images?<span class="faq-icon">+</span></div><div class="faq-a">Your edited gallery is delivered via a private online gallery link within 7–10 business days of your session. Rush delivery is available as an add-on — 3-day (+$300), 2-day (+$500), or next day (+$750).</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What's the deposit to book?<span class="faq-icon">+</span></div><div class="faq-a">A 50% deposit is required to secure your date. The remaining balance is due on the day of the session. Deposits are non-refundable but transferable if you reschedule with at least 48 hours notice.</div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What should I wear?<span class="faq-icon">+</span></div><div class="faq-a">Wear what feels like you — elevated. Solid colors and simple patterns typically photograph best. Avoid logos unless they're intentional. If you're unsure, I'm happy to advise during our pre-shoot consultation. Wardrobe styling is also available as an add-on.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What should I wear?<span class="faq-icon">+</span></div><div class="faq-a">Wear what feels like you — elevated. Solid colors and simple patterns typically photograph best. Avoid logos unless they're intentional. If you're unsure, I'm happy to advise during our pre-shoot consultation. Wardrobe styling is available as an add-on ($600), as is hair &amp; makeup ($350–450 for sessions).</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you travel for shoots?<span class="faq-icon">+</span></div><div class="faq-a">Yes. I'm based in Atlanta, Los Angeles, and New York — and available worldwide. Travel outside these markets may include a travel fee (flights, hotel, ground transport) discussed during consultation.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you take on commercial and brand work?<span class="faq-icon">+</span></div><div class="faq-a">Yes — that's most of what I do. Day rates start at $1,800 (half day) and $3,200 (full day), plus usage. If a project needs full production — casting, styling, crew, locations, post — that runs through <a href="https://purplespideragency.com" target="_blank" style="color:var(--accent-deep)">Purple Spider Agency</a>, starting at $4,500.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can you shoot product without us being there?<span class="faq-icon">+</span></div><div class="faq-a">Yes. Ship your product to the Atlanta studio and we handle concept, styling, shooting and post — you approve remotely. It's how a lot of our ongoing brand work runs.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How does licensing work?<span class="faq-icon">+</span></div><div class="faq-a">All sessions include personal use rights. If your images will be used commercially — ads, billboards, product campaigns, editorial publishing — a licensing fee applies depending on scope, duration, and distribution. We discuss and agree before delivery. No surprises.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does the fee cover the location itself?<span class="faq-icon">+</span></div><div class="faq-a">The <em>work</em> of finding and securing a location is included &mdash; that's part of what an editorial fee buys. The location's own cost isn't. Public spaces, your space or mine are covered at no charge. If we want a specific venue, studio or anything needing a permit, that's billed at cost with no markup, and I'll always get your sign-off on the number before anything is booked. Same applies to props and wardrobe we have to buy or rent.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">I have my own moodboard — can you just shoot it?<span class="faq-icon">+</span></div><div class="faq-a">Yes, and it's welcome. Which tier it lands in depends on what the images need <em>built</em>, not who put the board together. References for mood, colour or lighting fit inside a standard portrait session. If it calls for sourced props, styling, a scouted location or several set-ups, that's an editorial. Either way we'll talk it through first — I'll tell you what will work, what won't, and where I'd push it further.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I request specific shots or moods?<span class="faq-icon">+</span></div><div class="faq-a">Absolutely. Every booking includes a pre-shoot consultation where we align on creative direction, references, and shot list. Come with a vision or let me bring one — either works.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What's your cancellation policy?<span class="faq-icon">+</span></div><div class="faq-a">Cancellations within 48 hours of the session forfeit the deposit. Reschedules with 48+ hours notice are accommodated once at no charge. Same-day cancellations are billed at 50% of the full session rate.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you shoot tethered?<span class="faq-icon">+</span></div><div class="faq-a">Yes, tethered shooting is available for studio sessions — great for clients who want to see images in real time and provide on-set direction. Let me know when booking.</div></div>
@@ -581,12 +731,12 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
 
 <section id="contact">
   <div class="sec-hdr">
-    <div><p class="sec-eye">Let's Work Together</p><h2 class="sec-ttl">Book a Session</h2></div>
+    <div><p class="sec-eye">Let's Work Together</p><h2 class="sec-ttl">Start a Project</h2></div>
   </div>
   <div class="contact-wrap">
     <div class="cl">
       <h3>Let's make something worth looking at.</h3>
-      <p>Build your session below and submit — I'll follow up within 24 hours to confirm details and send an invoice.</p>
+      <p>Tell me about the project and I'll come back within 24 hours with next steps.</p>
       <div class="citems">
         <div class="citem"><div class="cicon">✉</div><div class="ctxt"><strong>Want to talk about a custom shoot?</strong><span>Email me at <a href="mailto:jarroddanderson@gmail.com">jarroddanderson@gmail.com</a></span></div></div>
         <div class="citem"><div class="cicon">📍</div><div class="ctxt"><strong>Based in</strong><span>Atlanta · Los Angeles · New York</span></div></div>
@@ -598,169 +748,93 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
     </div>
 
     <div class="calc" id="estimator">
-      <div class="calc-h">Book Your Shoot</div>
-      <p class="calc-intro">Get an instant estimate and send your inquiry in under 2 minutes. No commitment required.</p>
+      <div class="calc-h">Start a Project</div>
+      <p class="calc-intro">Tell me what you're working on. I reply within 24 hours with next steps and a quote built around your brief.</p>
 
       <div class="crow">
-        <div class="clbl">01 — Session Type <span class="step-badge req">Required</span></div>
+        <div class="clbl">01 — What are you shooting? <span class="step-badge req">Required</span></div>
         <div class="scards">
-          <button class="scard" data-type="editorial" onclick="pickSess(this)">
+          <button type="button" class="scard" data-type="Portrait / Headshot" onclick="pickType(this)">
+            <div class="scard-n">Portrait &amp; Headshot</div>
+            <div class="scard-d">You are the subject. From $650.</div>
+          </button>
+          <button type="button" class="scard" data-type="Editorial" onclick="pickType(this)">
             <div class="scard-n">Editorial</div>
-            <div class="scard-d">Artistic, story-driven shoots with creative direction.</div>
+            <div class="scard-d">Concepted before the day. From $1,200.</div>
           </button>
-          <button class="scard" data-type="headshots" onclick="pickSess(this)">
-            <div class="scard-n">Portraits &amp; Headshots</div>
-            <div class="scard-d">Individual, team &amp; executive portraits.</div>
+          <button type="button" class="scard" data-type="Commercial / Campaign" onclick="pickType(this)">
+            <div class="scard-n">Commercial / Campaign</div>
+            <div class="scard-d">Brand campaigns, product and content.</div>
           </button>
-          <button class="scard" data-type="campaign" onclick="pickSess(this)">
-            <div class="scard-n">Campaigns</div>
-            <div class="scard-d">Commercial shoots, campaign content &amp; product photography.</div>
+          <button type="button" class="scard" data-type="Event" onclick="pickType(this)">
+            <div class="scard-n">Event</div>
+            <div class="scard-d">Activations, launches, live coverage.</div>
           </button>
-          <button class="scard" data-type="events" onclick="pickSess(this)">
-            <div class="scard-n">Events</div>
-            <div class="scard-d">Brand activations, launches &amp; live coverage.</div>
-          </button>
+        </div>
+      </div>
+
+      <div class="rate-line">
+        <p>What&rsquo;s the difference between the sessions?</p>
+        <a href="#work-with-me">See the full breakdown &uarr;</a>
+      </div>
+
+      <div class="crow">
+        <div class="clbl">02 — Your details <span class="step-badge req">Required</span></div>
+        <div class="fgrid">
+          <input class="finput" id="f-name" type="text" placeholder="Name *">
+          <input class="finput" id="f-email" type="email" placeholder="Email *">
+          <input class="finput" id="f-company" type="text" placeholder="Company / brand (optional)">
+          <input class="finput" id="f-date" type="text" placeholder="Date or timeframe">
+        </div>
+      </div>
+
+      <div class="crow" id="budget-row" style="display:none">
+        <div class="clbl">03 — Budget range <span class="step-badge opt">Optional &mdash; it speeds things up</span></div>
+        <div class="bgrid">
+          <button type="button" class="bopt" data-b="$650–1,500" onclick="pickBudget(this)">$650–1.5K</button>
+          <button type="button" class="bopt" data-b="$1,500–5,000" onclick="pickBudget(this)">$1.5–5K</button>
+          <button type="button" class="bopt" data-b="$5,000–15,000" onclick="pickBudget(this)">$5–15K</button>
+          <button type="button" class="bopt" data-b="$15,000+" onclick="pickBudget(this)">$15K+</button>
+          <button type="button" class="bopt" data-b="Not sure yet" onclick="pickBudget(this)">Not sure yet</button>
         </div>
       </div>
 
       <div class="crow">
-        <div class="clbl">02 — Duration <span class="step-badge req">Required</span></div>
-        <div id="dur-opts">
-          <div class="hrs-slider-wrap">
-            <div class="hrs-display">
-              <div class="hrs-num-wrap">
-                <button class="hrs-stepper" onclick="stepHrs(-1)">&#8722;</button>
-                <span class="hrs-num-label"><span id="hrs-val">1</span> <span id="hrs-unit">hr</span></span>
-                <button class="hrs-stepper" onclick="stepHrs(1)">&#43;</button>
-              </div>
-              <span class="hrs-price-tag" id="hrs-price-tag">$250</span>
-            </div>
-            <input type="range" id="hrs-slider" min="1" max="12" value="1" oninput="pickCustomHrs(parseInt(this.value))">
-            <div class="hrs-range-labels"><span>1 hr</span><span>12 hrs</span></div>
-            <div class="hrs-presets">
-              <button class="hpreset active" id="hpreset-1" onclick="setHrs(1)">1 Hour</button>
-              <button class="hpreset" id="hpreset-2" onclick="setHrs(2)">2 Hours</button>
-              <button class="hpreset" id="hpreset-hd" onclick="setHrs(4)">Half Day · 4 hrs</button>
-              <button class="hpreset" id="hpreset-fd" onclick="setHrs(8)">Full Day · 8 hrs</button>
-            </div>
-          </div>
-        </div>
+        <div class="clbl" id="brief-lbl">03 — The brief <span class="step-badge opt">Optional</span></div>
+        <textarea class="finput ftext" id="f-msg" rows="4" placeholder="What are you launching? Who's it for? Any references or deliverables you already have in mind."></textarea>
       </div>
 
-      <div class="crow">
-        <div class="clbl">03 — Location <span class="step-badge req">Required</span></div>
-        <div class="ltogs">
-          <button class="ltog sel" data-fee="0" onclick="pickLoc(this)">
-            <div class="ltog-n">On Location</div>
-            <div class="ltog-d">Your space, outdoors, or scouted spot — no extra charge</div>
-          </button>
-          <button class="ltog" data-fee="125" onclick="pickLoc(this)">
-            <div class="ltog-n">Studio</div>
-            <div class="ltog-d">+$125/hr · full professional lighting &amp; equipment included</div>
-          </button>
-        </div>
-      </div>
-
-      <div class="crow">
-        <div class="clbl">04 — Add-ons <span class="step-badge opt">Optional</span></div>
-        <div class="agrid">
-          <div class="edits-row">
-            <div class="edits-label">Extra Edited Images<span>$200 per pack of 8</span></div>
-            <div class="edits-controls">
-              <button class="edits-btn" onclick="changeEdits(-1)">&#8722;</button>
-              <input class="edits-val" id="edits-input" type="number" value="0" min="0" max="20" oninput="setEdits(this.value)">
-              <button class="edits-btn" onclick="changeEdits(1)">+</button>
-            </div>
-          </div>
-          <button class="ca" data-val="0" data-type="second" onclick="togA(this)">
-            <div class="ca-row"><span>Second Shooter</span><span class="ap">+$250/hr</span></div>
-            <div class="ca-note">Scales with session duration</div>
-          </button>
-          <button class="ca" data-val="800" onclick="togA(this)">
-            <div class="ca-row"><span>Hair &amp; Makeup</span><span class="ap">+$800</span></div>
-            <div class="ca-note">Professional on-set H&amp;MU artist</div>
-          </button>
-          <button class="ca" data-val="600" onclick="togA(this)">
-            <div class="ca-row"><span>Styling / Wardrobe</span><span class="ap">+$600</span></div>
-            <div class="ca-note">Wardrobe styling for your session</div>
-          </button>
-          <button class="ca" data-val="500" onclick="togA(this)">
-            <div class="ca-row"><span>Location Scouting</span><span class="ap">+$500</span></div>
-            <div class="ca-note">We find and secure the perfect spot</div>
-          </button>
-          <div class="ca ca-wide sel" id="rush-standard" onclick="pickDelivery('standard')">
-            <div class="ca-row"><span>&#9679;&nbsp; Standard Delivery</span><span class="ap" id="std-label">Included</span></div>
-            <div class="ca-note">Gallery delivered within 7–10 business days</div>
-          </div>
-          <div class="ca ca-wide" id="rush-ca" onclick="pickDelivery('rush')">
-            <div class="ca-row"><span>&#9654;&nbsp; Rush Delivery</span><span class="ap">Select speed below</span></div>
-            <div class="ca-note">Expedited gallery delivery — choose your turnaround</div>
-          </div>
-        </div>
-        <div class="video-opts" id="rush-opts" style="display:none">
-          <button class="vopt" data-val="300" onclick="togRopt(this)">3-Day Turnaround<span class="vopt-price">+$300</span></button>
-          <button class="vopt" data-val="500" onclick="togRopt(this)">2-Day Turnaround<span class="vopt-price">+$500</span></button>
-          <button class="vopt" data-val="750" onclick="togRopt(this)">Next Day Turnaround<span class="vopt-price">+$750</span></button>
-        </div>
-        <div class="agrid">
-          <div class="ca ca-wide" id="video-ca" onclick="togVideo()">
-            <div class="ca-row"><span>&#9654;&nbsp; Add Video</span><span class="ap">Select type below</span></div>
-            <div class="ca-note">Long-form, short-form, BTS &amp; interview</div>
-          </div>
-        </div>
-        <div class="video-opts" id="video-opts" style="display:none">
-          <button class="vopt" data-val="1300" onclick="togVopt(this)">Long-form Brand Video<span class="vopt-price">+$1,300</span></button>
-          <button class="vopt" data-val="500" onclick="togVopt(this)">Short-form / Reels<span class="vopt-price">+$500</span></button>
-          <button class="vopt" data-val="650" onclick="togVopt(this)">Behind the Scenes<span class="vopt-price">+$650</span></button>
-          <button class="vopt" data-val="700" onclick="togVopt(this)">Interview / Talking Head<span class="vopt-price">+$700</span></button>
-        </div>
-        <div class="lic-note" style="margin-top:10px">
-          <p>&#9432;&nbsp; <strong style="color:rgba(255,255,255,.6);font-weight:500">Licensing:</strong> All sessions include personal use. Commercial, advertising, or editorial use may require a licensing fee based on scope and distribution — agreed before delivery. <a href="mailto:jarroddanderson@gmail.com">Questions? Let's talk.</a></p>
-        </div>
-      </div>
-
-      <div class="chr"></div>
-      <div class="tlbl">Estimated Total</div>
-      <div class="tnum"><sup>$</sup><span id="tot">300</span></div>
-      <div id="bl-imgs" style="font-size:12px;color:rgba(255,255,255,.35);margin-top:4px;margin-bottom:12px;letter-spacing:.04em"></div>
-      <div class="bkdn" id="bkdn">
-        <div class="bl hi"><span id="bl-main">Fashion & Editorial · 1 hr · On Location</span><span id="bl-base">$300</span></div>
-      </div>
-
-
-      <!-- Contact form -->
-      <div class="form-fields">
-        <div class="form-row">
-          <input class="finput" id="f-name" type="text" placeholder="Your name *" required>
-          <input class="finput" id="f-email" type="email" placeholder="Your email *" required>
-        </div>
-        <input class="finput" id="f-phone" type="tel" placeholder="Phone number">
-        <p style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.45);margin:16px 0 8px;">Do you have a date in mind?</p>
-        <div class="date-selector" id="date-selector">
-          <div class="date-opts">
-            <button type="button" class="dopt sel" data-mode="specific" onclick="setDateMode(this)">Specific Date</button>
-            <button type="button" class="dopt" data-mode="range" onclick="setDateMode(this)">Date Range</button>
-            <button type="button" class="dopt" data-mode="unsure" onclick="setDateMode(this)">Not Sure Yet</button>
-          </div>
-          <div id="date-specific">
-            <input class="finput" id="f-date-single" type="date" placeholder="Select a date">
-          </div>
-          <div id="date-range" style="display:none">
-            <div class="date-range-row">
-              <input class="finput" id="f-date-start" type="date" placeholder="Start date">
-              <span class="date-range-sep">to</span>
-              <input class="finput" id="f-date-end" type="date" placeholder="End date">
-            </div>
-          </div>
-          <div id="date-unsure" style="display:none">
-            <input class="finput" id="f-date-unsure-text" type="text" placeholder="Any rough timeframe? e.g. Spring 2025, ASAP, TBD">
-          </div>
-        </div>
-        <textarea class="finput ftextarea" id="f-notes" placeholder="Anything else I should know? (vision, brand, concept...)"></textarea>
+      <div class="calc-foot">
         <button class="btn-inq" id="submitBtn" onclick="submitForm()">Send Inquiry &rarr;</button>
-        <div class="success-msg" id="success-msg">&#10003;&nbsp; Sent! I'll follow up within 24 hours to confirm your session and next steps.</div>
+        <div class="success-msg" id="success-msg">&#10003;&nbsp; Sent — I'll follow up within 24 hours.</div>
       </div>
     </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     NEWSLETTER  —  ONE SETUP STEP REQUIRED
+     Paste your provider's form URL into NEWSLETTER_ENDPOINT in the
+     script at the bottom of this file. Until you do, sign-ups fall
+     back to opening an email to you, so nothing is ever lost.
+       ConvertKit : Form > Embed > HTML > copy the form action URL
+       Beehiiv    : Publication > Subscribe forms > Embed
+       Buttondown : Settings > Embedding
+       Mailchimp  : Audience > Signup forms > Embedded form
+     ============================================================ -->
+<section id="newsletter">
+  <div class="nl-inner">
+    <div class="nl-copy">
+      <p class="nl-eye">The rebuild, in your inbox</p>
+      <h3 class="nl-ttl">I&rsquo;m building an agency back from scratch.</h3>
+      <p class="nl-desc">Every couple of weeks: what&rsquo;s actually working, what isn&rsquo;t, and <em>The Untrained Eye</em> &mdash; one ordinary thing and why it looks good. No pitches.</p>
+    </div>
+    <form class="nl-form" id="nl-form" onsubmit="return subscribe(event)">
+      <input class="nl-input" id="nl-email" type="email" placeholder="you@email.com" aria-label="Email address" required>
+      <button class="nl-btn" type="submit">Subscribe</button>
+      <p class="nl-fine" id="nl-fine">No spam. Unsubscribe anytime.</p>
+    </form>
   </div>
 </section>
 
@@ -769,7 +843,8 @@ input[type="date"].finput::-webkit-calendar-picker-indicator{filter:invert(1);op
   <div class="footer-links">
     <a href="#portfolio">Work</a>
     <a href="#about">About</a>
-    <a href="#estimator">Book</a>
+    <a href="#newsletter">Newsletter</a>
+    <a href="#estimator">Contact</a>
     <a href="mailto:jarroddanderson@gmail.com">jarroddanderson@gmail.com</a>
   </div>
   <p class="footer-copy">&copy; 2025 Jarrod Anderson. All rights reserved. &nbsp;&middot;&nbsp; Atlanta &middot; Los Angeles &middot; New York</p>
@@ -791,7 +866,7 @@ function closeMenu(){
 
 window.addEventListener('scroll',()=>{
   document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
-  const ids=['home','portfolio','about','faq','contact'];
+  const ids=['home','portfolio','work-with-me','about','faq','contact'];
   let cur='';
   ids.forEach(id=>{const el=document.getElementById(id);if(el&&window.scrollY>=el.offsetTop-140)cur=id;});
   document.querySelectorAll('.nav-links a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));
@@ -861,287 +936,87 @@ document.addEventListener('keydown',e=>{
 function toggleFaq(el){el.parentElement.classList.toggle('open');}
 
 // CALCULATOR
-const RATES={editorial:{hrRate:250,fullDay:1400,halfDay:800,imgPerHr:8,isEvent:false},headshots:{hrRate:250,fullDay:1400,halfDay:800,imgPerHr:8,isEvent:false},campaign:{hrRate:250,fullDay:1400,halfDay:800,imgPerHr:8,isEvent:false},events:{hrRate:250,fullDay:1400,halfDay:800,imgPerHr:62,isEvent:false}};
 
-const st={
-  type:'',typeLabel:'',
-  hrs:1,durLabel:'1 hr',isFullDay:false,basePrice:250,
-  locFee:0,locLabel:'On Location',
-  addons:[],hasSecond:false,
-  extraEditPacks:0,
-  videoOn:false,videoPicks:[],rushOn:false,rushPick:0
-};
+/* ---- newsletter ----
+   Paste your provider's form action URL between the quotes.
+   Leave empty and sign-ups fall back to an email to you. */
+var NEWSLETTER_ENDPOINT = "";
 
-function pickSess(btn){
-  const isActive=btn.classList.contains('sel');
-  document.querySelectorAll('.scard').forEach(b=>b.classList.remove('sel'));
-  if(!isActive){
-    btn.classList.add('sel');
-    st.type=btn.dataset.type;
-    st.typeLabel=btn.querySelector('.scard-n').textContent;
+function subscribe(e){
+  e.preventDefault();
+  var email = document.getElementById('nl-email').value.trim();
+  var fine  = document.getElementById('nl-fine');
+  var btn   = document.querySelector('.nl-btn');
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){
+    fine.textContent = "That email doesn't look right."; fine.classList.remove('ok'); return false;
+  }
+  if(NEWSLETTER_ENDPOINT){
+    btn.disabled = true; btn.textContent = 'Sending…';
+    var fd = new FormData(); fd.append('email', fd.append ? email : email); fd.append('email_address', email);
+    fetch(NEWSLETTER_ENDPOINT, {method:'POST', body:fd, mode:'no-cors'})
+      .then(function(){ done(); })
+      .catch(function(){ done(); });
   } else {
-    st.type='';
-    st.typeLabel='';
+    window.location.href = 'mailto:jarroddanderson@gmail.com'
+      + '?subject=' + encodeURIComponent('Newsletter signup')
+      + '&body='    + encodeURIComponent('Please add me to the list: ' + email);
+    done();
   }
-  updateDurSubs();
-  recalcBase();
-  render();
-}
-
-function updateDurSubs(){
-  if(!st.type)return;
-  const r=RATES[st.type];
-  // update slider price tag
-  const _ptag=document.getElementById('hrs-price-tag');
-  if(_ptag)_ptag.textContent='$'+r.hrRate.toLocaleString()+'/hr';
-}
-
-function recalcBase(){
-  if(!st.type){st.basePrice=0;return;}
-  const r=RATES[st.type];
-  const h=st.hrs;
-  if(h===8){st.basePrice=r.fullDay;}
-  else if(h===4){st.basePrice=r.halfDay;}
-  else if(h>8){st.basePrice=r.fullDay+Math.round((h-8)*r.hrRate);}
-  else{st.basePrice=r.hrRate*h;}
-}
-
-function pickCustomHrs(hrs){
-  st.hrs=hrs;
-  st.durLabel=hrs===1?'1 hr':hrs===4?'Half Day (4 hrs)':hrs===8?'Full Day (8 hrs)':hrs+' hrs';
-  st.isFullDay=hrs>=8;
-  document.getElementById('hrs-val').textContent=hrs;
-  document.getElementById('hrs-unit').textContent=hrs===1?'hr':'hrs';
-  document.getElementById('hrs-slider').value=hrs;
-  document.querySelectorAll('.hpreset').forEach(b=>b.classList.remove('active'));
-  if(hrs===1)document.getElementById('hpreset-1').classList.add('active');
-  if(hrs===2)document.getElementById('hpreset-2').classList.add('active');
-  if(hrs===4)document.getElementById('hpreset-hd').classList.add('active');
-  if(hrs===8)document.getElementById('hpreset-fd').classList.add('active');
-  recalcBase();
-  const price='$'+st.basePrice.toLocaleString();
-  document.getElementById('hrs-price-tag').textContent=price;
-  render();
-}
-function setHrs(hrs){
-  pickCustomHrs(hrs);
-}
-function stepHrs(delta){
-  const cur=parseInt(document.getElementById('hrs-slider').value)||1;
-  const next=Math.min(12,Math.max(1,cur+delta));
-  pickCustomHrs(next);
-}
-function pickDur(btn){
-  pickCustomHrs(parseInt(btn.dataset.hrs));
-}
-
-function pickLoc(btn){
-  const wasSel=btn.classList.contains('sel');
-  document.querySelectorAll('.ltog').forEach(b=>b.classList.remove('sel'));
-  if(!wasSel){
-    btn.classList.add('sel');
-    st.locFee=parseInt(btn.dataset.fee);
-    st.locLabel=btn.querySelector('.ltog-n').textContent;
-  } else {
-    st.locFee=0;st.locLabel='';
+  function done(){
+    document.getElementById('nl-email').value = '';
+    btn.disabled = false; btn.textContent = 'Subscribe';
+    fine.textContent = "You're in. First one lands soon.";
+    fine.classList.add('ok');
   }
-  render();
+  return false;
 }
 
-function togA(btn){
-  const type=btn.dataset.type;
-  btn.classList.toggle('sel');
-  const on=btn.classList.contains('sel');
-  if(type==='second'){st.hasSecond=on;}
-  else{const val=parseInt(btn.dataset.val);if(on){st.addons.push(val);}else{const i=st.addons.indexOf(val);if(i>-1)st.addons.splice(i,1);}}
-  render();
-}
-
-function changeEdits(dir){const inp=document.getElementById('edits-input');const v=Math.max(0,Math.min(20,parseInt(inp.value||0)+dir));inp.value=v;st.extraEditPacks=v;render();}
-function setEdits(val){st.extraEditPacks=Math.max(0,Math.min(20,parseInt(val)||0));render();}
-
-function pickDelivery(type){
-  const isRush=(type==='rush');
-  document.getElementById('rush-standard').classList.toggle('sel',!isRush);
-  document.getElementById('rush-ca').classList.toggle('sel',isRush);
-  document.getElementById('rush-opts').style.display=isRush?'grid':'none';
-  st.rushOn=isRush;
-  if(!isRush){st.rushPick=0;document.querySelectorAll('#rush-opts .vopt').forEach(b=>b.classList.remove('sel'));}
-  render();
-}
-
-function togRopt(btn){
-  // Only one rush option at a time
-  document.querySelectorAll('#rush-opts .vopt').forEach(b=>b.classList.remove('sel'));
-  const val=parseInt(btn.dataset.val);
-  if(st.rushPick===val){st.rushPick=0;}else{btn.classList.add('sel');st.rushPick=val;}
-  render();
-}
-
-function togVideo(){
-  st.videoOn=!st.videoOn;
-  document.getElementById('video-ca').classList.toggle('sel',st.videoOn);
-  document.getElementById('video-opts').style.display=st.videoOn?'grid':'none';
-  if(!st.videoOn){st.videoPicks=[];document.querySelectorAll('.vopt').forEach(b=>b.classList.remove('sel'));}
-  render();
-}
-
-function togVopt(btn){
-  const val=parseInt(btn.dataset.val);
-  btn.classList.toggle('sel');
-  if(btn.classList.contains('sel')){st.videoPicks.push(val);}else{const i=st.videoPicks.indexOf(val);if(i>-1)st.videoPicks.splice(i,1);}
-  render();
-}
-
-function render(){
-  const base=st.basePrice;
-  const studio=st.locFee>0?st.locFee*st.hrs:0;
-  const second=st.hasSecond?250*st.hrs:0;
-  const extraEdits=st.extraEditPacks*200;
-  const addonSum=st.addons.reduce((a,b)=>a+b,0);
-  const videoSum=st.videoOn?st.videoPicks.reduce((a,b)=>a+b,0):0;
-  const total=base+studio+second+extraEdits+addonSum+videoSum+st.rushPick;
-  document.getElementById('tot').textContent=total.toLocaleString();
-  // Estimated images line
-  const _r=st.type?RATES[st.type]:null;
-  if(!_r){return;}
-  const _baseImgs=st.isFullDay?_r.imgPerHr*8:_r.imgPerHr*st.hrs;
-  const _extraImgs=st.extraEditPacks*8;
-  const _totalImgs=_baseImgs+_extraImgs;
-  const _imgEl=document.getElementById('bl-imgs');
-  if(_imgEl){
-    if(_r.isEvent)_imgEl.textContent='~'+Math.round(_baseImgs*0.8)+'–'+_baseImgs+' estimated images';
-    else _imgEl.textContent='~'+_totalImgs+' estimated '+(_totalImgs===1?'image':'images');
+/* ---- inquiry form ---- */
+var inq={type:'',budget:''};
+function pickType(btn){
+  document.querySelectorAll('.scard').forEach(function(b){b.classList.remove('sel');});
+  btn.classList.add('sel'); inq.type=btn.dataset.type;
+  // budget only matters where scope is open-ended — sessions have published prices
+  var needsBudget = (inq.type==='Commercial / Campaign' || inq.type==='Event');
+  document.getElementById('budget-row').style.display = needsBudget ? '' : 'none';
+  document.getElementById('brief-lbl').innerHTML =
+    (needsBudget ? '04' : '03') + ' — The brief <span class="step-badge opt">Optional</span>';
+  if(!needsBudget){
+    inq.budget='';
+    document.querySelectorAll('.bopt').forEach(function(b){b.classList.remove('sel');});
   }
-  document.getElementById('bl-main').textContent=st.typeLabel+' · '+st.durLabel+' · '+st.locLabel;
-  document.getElementById('bl-base').textContent='$'+base.toLocaleString();
-  const bkdn=document.getElementById('bkdn');
-  bkdn.querySelectorAll('.dyn').forEach(e=>e.remove());
-  const addLine=(lbl,val)=>{const d=document.createElement('div');d.className='bl dyn';d.innerHTML='<span>'+lbl+'</span><span>+$'+val.toLocaleString()+'</span>';bkdn.appendChild(d);};
-  if(studio>0)addLine('Studio (+$125/hr × '+st.hrs+' hrs)',studio);
-  if(second>0)addLine('Second Shooter (+$250/hr × '+st.hrs+' hrs)',second);
-  if(extraEdits>0)addLine('Extra Edits ('+st.extraEditPacks*8+' images)',extraEdits);
-  // Individual add-ons
-  document.querySelectorAll('.ca.sel').forEach(function(btn){
-    if(btn.dataset.type==='second'||parseInt(btn.dataset.val||0)===0)return;
-    const lbl=btn.querySelector('.ca-row span')?btn.querySelector('.ca-row span').textContent.trim():btn.textContent.trim();
-    addLine(lbl,parseInt(btn.dataset.val));
-  });
-  // Individual video picks
-  document.querySelectorAll('#video-opts .vopt.sel').forEach(function(btn){
-    const lbl=btn.childNodes[0].textContent.trim();
-    addLine(lbl,parseInt(btn.dataset.val));
-  });
-  // Rush delivery
-  document.querySelectorAll('#rush-opts .vopt.sel').forEach(function(btn){
-    const lbl=btn.childNodes[0].textContent.trim();
-    addLine('Rush — '+lbl,parseInt(btn.dataset.val));
-  });
 }
-
-// FORM SUBMIT — opens mailto with full summary
-function setDateMode(btn){
-  document.querySelectorAll('.dopt').forEach(function(b){ b.classList.remove('sel'); });
-  btn.classList.add('sel');
-  var mode = btn.getAttribute('data-mode');
-  document.getElementById('date-specific').style.display = (mode === 'specific') ? '' : 'none';
-  document.getElementById('date-range').style.display    = (mode === 'range')    ? '' : 'none';
-  document.getElementById('date-unsure').style.display   = (mode === 'unsure')   ? '' : 'none';
-}
-function getDateValue(){
-  var sel = document.querySelector('.dopt.sel');
-  if (!sel) return '';
-  var mode = sel.getAttribute('data-mode');
-  if (mode === 'specific') {
-    return document.getElementById('f-date-single').value || '';
-  } else if (mode === 'range') {
-    var s = document.getElementById('f-date-start').value;
-    var e = document.getElementById('f-date-end').value;
-    if (s && e) return s + ' to ' + e;
-    return s || e || '';
-  } else {
-    return document.getElementById('f-date-unsure-text').value || 'Not sure yet';
-  }
+function pickBudget(btn){
+  document.querySelectorAll('.bopt').forEach(function(b){b.classList.remove('sel');});
+  btn.classList.add('sel'); inq.budget=btn.dataset.b;
 }
 function submitForm(){
-  const name=document.getElementById('f-name').value.trim();
-  const email=document.getElementById('f-email').value.trim();
-  if(!name||!email){
-    alert('Please fill in your name and email before submitting.');
-    return;
-  }
+  var name=document.getElementById('f-name').value.trim();
+  var email=document.getElementById('f-email').value.trim();
+  var company=document.getElementById('f-company').value.trim();
+  var date=document.getElementById('f-date').value.trim();
+  var msg=document.getElementById('f-msg').value.trim();
 
-  // Build summary
-  const base=st.basePrice;
-  const studio=st.locFee>0?st.locFee*st.hrs:0;
-  const second=st.hasSecond?250*st.hrs:0;
-  const extraEdits=st.extraEditPacks*200;
-  const addonSum=st.addons.reduce((a,b)=>a+b,0);
-  const videoSum=st.videoOn?st.videoPicks.reduce((a,b)=>a+b,0):0;
-  const total=base+studio+second+extraEdits+addonSum+videoSum+st.rushPick;
+  if(!inq.type){alert('Please pick what you\'re shooting.');return;}
+  if(!name||!email){alert('Please add your name and email.');return;}
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){alert('That email doesn\'t look right.');return;}
 
-  const date=getDateValue()||'Not specified';
-  const notes=document.getElementById('f-notes').value.trim()||'None';
+  var body='New inquiry — byjarrod.com\n\n';
+  body+='Type: '+inq.type+'\n';
+  body+='Name: '+name+'\n';
+  body+='Email: '+email+'\n';
+  if(company) body+='Company: '+company+'\n';
+  if(date)    body+='Timeframe: '+date+'\n';
+  if(inq.budget) body+='Budget: '+inq.budget+'\n';
+  if(msg)     body+='\nBrief:\n'+msg+'\n';
 
-  const videoTypes=st.videoOn?[...document.querySelectorAll('#video-opts .vopt.sel')].map(b=>b.textContent.replace(/\+\$\d+/,'')).join(', ')||'None selected':'None';
-  const rushLabel=st.rushPick===300?'3-Day':st.rushPick===500?'2-Day':st.rushPick===750?'Next Day':'';
+  window.location.href='mailto:jarroddanderson@gmail.com'
+    +'?subject='+encodeURIComponent('New inquiry — '+inq.type+' — '+name)
+    +'&body='+encodeURIComponent(body);
 
-  var body = 'New Session Inquiry \u2014 byjarrod.com\n\n';
-  body += 'CLIENT DETAILS\n';
-  body += 'Name: ' + name + '\n';
-  body += 'Email: ' + email + '\n';
-  const phone=document.getElementById('f-phone').value.trim();
-  if(phone)body += 'Phone: ' + phone + '\n';
-  body += 'Preferred Date: ' + date + '\n\n';
-  body += 'SESSION ESTIMATE\n';
-  body += 'Type: ' + st.typeLabel + '\n';
-  body += 'Duration: ' + st.durLabel + '\n';
-  body += 'Location: ' + st.locLabel + '\n';
-  body += 'Base Rate: $' + base.toLocaleString() + '\n';
-  if(studio>0) body += 'Studio Fee: +$' + studio.toLocaleString() + '\n';
-  if(second>0) body += 'Second Shooter: +$' + second.toLocaleString() + '\n';
-  if(extraEdits>0) body += 'Extra Edits (' + (st.extraEditPacks*8) + ' images): +$' + extraEdits.toLocaleString() + '\n';
-  if(addonSum>0) body += 'Add-ons: +$' + addonSum.toLocaleString() + '\n';
-  if(videoSum>0) body += 'Video (' + videoTypes + '): +$' + videoSum.toLocaleString() + '\n';
-  if(st.rushPick>0) body += 'Rush Delivery (' + rushLabel + '): +$' + st.rushPick.toLocaleString() + '\n';
-  body += '\nESTIMATED TOTAL: $' + total.toLocaleString() + '\n\n';
-  body += 'NOTES FROM CLIENT\n' + notes;
-
-  fetch('https://formspree.io/f/mgolgdag', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-    body: JSON.stringify({
-      name: name,
-      email: email,
-      phone: document.getElementById('f-phone').value.trim(),
-      preferred_date: getDateValue(),
-      notes: document.getElementById('f-notes').value.trim(),
-      session_summary: body
-    })
-  }).then(function(response){
-    if(response.ok){
-      const btn=document.getElementById('submitBtn');
-      btn.disabled=true;
-      btn.textContent='Inquiry Sent ✓';
-      document.getElementById('success-msg').style.display='block';
-    } else {
-      alert('Something went wrong. Please email jarroddanderson@gmail.com directly.');
-    }
-  }).catch(function(){
-    alert('Something went wrong. Please email jarroddanderson@gmail.com directly.');
-  });
-  return;
-
-  const btn=document.getElementById('submitBtn');
-  btn.disabled=true;
-  btn.textContent='Inquiry Sent ✓';
-  document.getElementById('success-msg').style.display='block';
+  document.getElementById('success-msg').classList.add('show');
 }
 
-render();
-applyFilter();
-
-// Scroll fade-in observer
 const _fadeObserver=new IntersectionObserver((entries)=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');_fadeObserver.unobserve(e.target);}});
 },{threshold:0.12});
